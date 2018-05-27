@@ -16,50 +16,52 @@
 	<!-- external link - font awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+	
+
 
  
 </head>
 <body>
 
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
-			<a class="navbar-brand" href="#" id="logo">Sitename</a>
+<div class="container-fluid">
+
+	<header class="row fixed-top"><!-- fixed-top -->
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+				<a class="navbar-brand" href="#" id="logo">Sitename</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-				<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
 			</button>
 
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
 
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ml-auto">
+					<li class="nav-item ml-auto navAlign" id="home"> <!-- navAlign - to make the items on the center of nav -->
+						<a class="nav-link" href="#"> <i class="fas fa-home"></i>Home</a>
+					</li>
 
-						<li class="nav-item ml-auto navAlign" id="home"> <!-- navAlign - to make the items on the center of nav -->
-							<a class="nav-link" href="#"> <i class="fas fa-home"></i>Home</a>
-						</li>
+					<li class="nav-item ml-auto navAlign" id="about">
+						<a class="nav-link" href="#"> <i class="fas fa-info-circle"></i>About</a>
+					</li>
 
-						<li class="nav-item ml-auto navAlign" id="about">
-							<a class="nav-link" href="#"> <i class="fas fa-info-circle"></i>About</a>
-						</li>
+					<li class="nav-item ml-auto navAlign" id="contact">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope"></i>Contact</a>
+					</li>
+				</ul>
+			</div>
 
-						<li class="nav-item ml-auto navAlign" id="contact">
-							<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope"></i>Contact</a>
-						</li>
-					</ul>
-				</div>
-		</nav>
+			
 
-
+			</nav>
+		</div>
 	</header>
 
 
 
-	<!-- modal testing -->
+<!-- modal testing -->
 
 	<div class="container">
-	  <!-- <h2>Modal Example</h2> -->
-	  <!-- Trigger the modal with a button -->
-	  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
-
 	  <!-- Modal -->
 	  <div class="modal fade" id="myModal" role="dialog">
 	    <div class="modal-dialog">
@@ -120,26 +122,106 @@
 
 
 
-<!-- vertical navs -->
 
-	<div class="row"> <!-- wrapper of tabs and main content -->
-		<div class="col-md-1 nav" id="leftTabs">
-			<ul class="nav flex-column">
-		    <li class="nav-item">
-		      <a class="nav-link" href="#">Link</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="#">Link</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="#">Link</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link disabled" href="#">Disabled</a>
-		    </li>
-		  </ul>
-		</div> <!-- end of col-md-1 -->
-	</div>  <!-- end of wrapper of tabs and main content -->
+
+	 <!-- content -->
+	 <main class="row">
+	 	<div class="col-md-3" > </div>
+	 	<div class="col-md-6" >
+	 		<div class="card" id="contentCard">
+	 			<div class="card-body">
+	 				
+	 			</div>
+	 		</div>
+
+	 		<div class="card" id="contentCard">
+	 			<div class="card-body">
+	 				
+	 			</div>
+	 		</div>
+
+	 	</div>
+	 	<div class="col-md-3" ></div>
+	 </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,6 +237,15 @@
 
 
 	<!-- external custom js -->
+
+
+
+	<!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

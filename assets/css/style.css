@@ -35,7 +35,7 @@ i {
     background: rgba(255,255,255,0.75);
 }
 
-.card
+#showContact
 {
     background-color: #F4EAD5;
     background-size: cover;
@@ -53,10 +53,55 @@ margin-right: 6px;
 
 
 
-#leftTabs {
-    background-color: grey;
-    height: 100%;
+#row1 {
+    margin-top: 55px;
 }
+
+
+#row1Col1 {
+    min-width: 100px;
+    overflow: hidden;
+}
+
+#row1Col2{
+
+}
+
+
+
+.clear {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+
+
+body {
+
+    background: url(../images/bg.jpg) no-repeat center fixed;
+    -webkit-background-size: cover; /*targets google chrome and safari web browser*/
+    -moz-background-size: cover; /*mozilla*/
+    -o-background-size: cover; /*opera*/
+    background-size: cover;
+} 
+
+
+#contentCard {
+    border: 2px solid white;
+    height: 450px;
+    min-height: 200px;
+    width: 100%;
+    min-width: 200px;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+/*    top: 50%;
+    left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    margin-top: 120px;
+}
+
 
 
 
