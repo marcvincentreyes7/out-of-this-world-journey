@@ -88,29 +88,74 @@ body {
 } 
 
 
-#contentCard {
-    border: 2px solid white;
-    height: 450px;
-    min-height: 200px;
-    width: 100%;
-    min-width: 200px;
+#contentCard1 {
+    border: 2px solid red;
+    height: 100%;
+    /*min-height: 100px;
+    width: 100%;*/
+    /*min-width: 100px;*/
     background-color: rgba(0,0,0,0.5);
     position: relative;
-/*    top: 50%;
-    left: 50%;*/
-    /*transform: translate(-50%, -50%);*/
-    margin-top: 120px;
+    /*margin-top: 40%;*/
+
+
 }
 
 
 
+#pic1 {
+
+    position: absolute;
+    top: 5%;
+    left: 75%;
+    border:2px solid white;
+    width: 35%;
+    min-width: 35%;
+    max-height: 55%;
 
 
+}
+
+#pic2 {
+
+    position: absolute;
+    top: 5%;
+    right: 75%;
+    border:2px solid white;
+    width: 35%;
+    min-width: 35%;
+    max-height: 55%;
+}
+
+#colCenterRight{
+    padding-right: 60px;
+}
+
+#colCenterLeft{
+    padding-left: 60px;
+}
 
 
+h1 {
+    padding-top: 10%;
+    padding-left: 35%;
+    color: white;
+    margin-bottom: 150px;
 
 
+}
 
+p {
+    color: white;
+    text-align: justify;
+    /*font-size-adjust: */
+
+}
+
+
+h2 {
+    color: white;
+}
 
 
 
