@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container-fluid">
 
 	<header class="row fixed-top"><!-- fixed-top -->
 		<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -39,15 +39,15 @@
 				<ul class="navbar-nav ml-auto">
 
 					<li class="nav-item ml-auto navAlign" id="home"> <!-- navAlign - to make the items on the center of nav -->
-						<a class="nav-link" href="#"> <i class="fas fa-home"></i>Home</a>
+						<a class="nav-link" href="#"> <i class="fas fa-home ii"></i>Home</a>
 					</li>
 
 					<li class="nav-item ml-auto navAlign" id="about">
-						<a class="nav-link" href="#"> <i class="fas fa-info-circle"></i>About</a>
+						<a class="nav-link" href="#"> <i class="fas fa-info-circle ii"></i>About</a>
 					</li>
 
 					<li class="nav-item ml-auto navAlign" id="contact">
-						<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope"></i>Contact</a>
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope ii"></i>Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -58,6 +58,19 @@
 		</div>
 	</header>
 
+	<nav class="navLeft"> <!-- vertical nav or tabs -->
+		<div class="logo">
+			<img src="" alt="logo">
+		</div>
+		<ul>
+			
+			<li class="liLeft"><a href="#about">About</a></li>
+			<li class="liLeft"><a href="#services">Services</a></li>
+			<li class="liLeft"><a href="#projects">Projects</a></li>
+			<li class="liLeft"><a href="#gallery">Skills</a></li>
+			<li class="liLeft"><a href="#footer">Tools</a></li>
+		</ul>
+	</nav> <!-- end of Nav -->
 
 
 <!-- modal testing -->
@@ -126,7 +139,8 @@
 
 
 	 <!-- content -->
-	 <main>
+	<main>
+		<div class="container-fluid">
 
 	 	<h1>Wandering In The Dark?</h1>
 	 	<div class="row" id="">
@@ -139,7 +153,7 @@
 		 						<div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
 			 						<h2>Marc Vincent C. Reyes</h2>
 			 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			 						tempor incididunt ut ipsum dolor ipsum dolor asdsdfdf ljkldfjkls klfsdhjkl sdfkjsdklfjsdkl dsfj ncididunt ut ipsum dolor ipsum dolor asdsdfdf ljkldfjkls klfsdhjkl sdfkjsdklfjsdkl dsfj
+			 						tempor incididunt ut ipsum dolor ipsum dolor asdsdfdf ljkldfjkls klfsdhjkl sdfkjsdklfjsdkl dsfj ncididunt ut ipsum dolor ipsum dolor asdsdfdf ljkldfjkls klfsdhjkl sdfkjsdklfjsdkl dsfj </p>
 			 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -160,7 +174,7 @@
 	 	</div>
 		 	<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
 		 	</div>
-	 	</div>
+	 	</div> <!-- end container fluid -->
 
 	 	<br>
 	 	<br>
@@ -168,6 +182,7 @@
 	 	<hr>
 	 	<br>
 	 	<br>
+
 
 	 	<div class="row">
 		 	<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3"></div>
@@ -218,7 +233,7 @@
 		 						<div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
 			 						<h2>Marc Vincent C. Reyes</h2>
 			 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			 						tempor incididunt ut ipsum dolor ipsum dolor asdsdfdf ljkldfjkls klfsdhjkl sdfkjsdklfjsdkl dsfj ncididunt ut ipsum dolor ipsum dolor asdsdfdf ljkldfjkls klfsdhjkl sdfkjsdklfjsdkl dsfj
+			 						tempor incididunt ut ipsum dolor ipsum dolor asdsdfdf ljkldfjkls klfsdhjkl sdfkjsdklfjsdkl dsfj ncididunt ut ipsum dolor ipsum dolor asdsdfdf ljkldfjkls klfsdhjkl sdfkjsdklfjsdkl dsfj </p>
 			 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -236,17 +251,50 @@
 		 	</div>
 	 	</div>
 	 	
-	 </main>
+	</main>
+	</div> <!-- end container fluid -->
 
 
 
 
 
 
+	<div class="container-fluid">
+		<footer class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 
+					<div>
+						<ul class="navbar-nav ml-auto">
 
+							<li class="nav-item zoom hoverText" id="facebook">
+								<a class="nav-link" href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook iii"></i><span class="hoverTextShow">Go to facebook.com</span></a>
+							</li>
 
+							<li class="nav-item zoom hoverText" id="twitter"> 
+								<a class="nav-link" href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter-square iii"></i><span class="hoverTextShow">Go to twitter.com</span></a>
+							</li>
 
+							<li class="nav-item zoom hoverText" id="github">
+								<a class="nav-link" href="https://github.com/" target="_blank"><i class="fab fa-github-square iii"></i><span class="hoverTextShow">Go to github.com</span></a>
+							</li>
+
+							<li class="nav-item zoom hoverText" id="gitlab">
+								<a class="nav-link" href="https://about.gitlab.com/" target="_blank"><i class="fab fa-gitlab iii"></i><span class="hoverTextShow">Go to gitlab</span></a>
+							</li>
+
+						</ul>
+					</div>
+
+				</nav>
+
+			</div>
+		</footer>
+	</div>
+
+	<div class="hoverText">Hover over me
+	  <span class="tooltiptext">Tooltip dsfsfsd</span>
+	</div>
 
 
 
@@ -349,6 +397,8 @@
 
     <!-- external bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+
 
 </body>
 </html>
