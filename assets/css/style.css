@@ -15,6 +15,8 @@
 */
 
 
+
+
 .ii {
     position: relative;
     bottom: 15px;
@@ -83,14 +85,45 @@ margin-right: 6px;
 
 
 
-body {
+#portfolioBody {
 
-    background: url(../images/bg.jpg) no-repeat center fixed;
+    background: url(../images/bg.jpg) repeat center fixed;
     -webkit-background-size: cover; /*targets google chrome and safari web browser*/
     -moz-background-size: cover; /*mozilla*/
     -o-background-size: cover; /*opera*/
     background-size: cover;
 } 
+
+
+#capsBody1stPage{
+    background: url(../images/capsbg.jpg) no-repeat center fixed;
+}
+
+#generalContainer {
+
+    background: url(../images/bgbg.gif) repeat;
+    opacity: .085;
+    position: absolute;
+    height:250%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+
+/*    background: url(../images/bgbg.gif) repeat;
+    opacity: .085;
+    height:100%;
+    width: 100%;*/
+}
+
+
+
+.bgbg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+
 
 
 #contentCard1 {
@@ -167,7 +200,25 @@ h2 {
     float: left;
     padding:0px;
     padding-top: 80px;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0.3;
+    left: -60px;
+    -webkit-transition: left 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: left 0.5s;
+
 }
+
+
+.navLeft:hover {
+    opacity: 1;
+    left: -1px;
+    -webkit-transition: left 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: left 0.5s;
+
+}
+
+
 
 .liLeft {
     list-style: none;
@@ -176,7 +227,7 @@ h2 {
     line-height: 30px; /*default of 16px * 3 to center the text vertically*/
     text-align: center;
     text-decoration: none;
-    padding: 5px
+    padding: 5px;
 }
 
 ul > li > a {
@@ -193,12 +244,6 @@ ul {
 footer {
     padding-top: 100px;
 }
-
-
-#facebook:hover {
-
-}
-
 
 
 
@@ -232,20 +277,33 @@ footer {
 
 .hoverText:hover .hoverTextShow {
     visibility: visible;
+}
 
-/*media queries*/
 
- /*Extra small devices (portrait phones, less than 576px)*/
-/*@media (max-width: 575.98px) { ... }*/
 
- /*Small devices (landscape phones, 576px and up)*/
-/*@media (min-width: 576px) and (max-width: 767.98px) { ... }*/
+/*capstone*/
 
- /*Medium devices (tablets, 768px and up)*/
-/*@media (min-width: 768px) and (max-width: 991.98px) { ... }*/
+iframe {
+    width: 100%; 
+    height: 315px;
+}
 
- /*Large devices (desktops, 992px and up)*/
-/*@media (min-width: 992px) and (max-width: 1199.98px) { ... }*/
 
- /*Extra large devices (large desktops, 1200px and up)*/
-/*@media (min-width: 1200px) { ... }*/
+video {
+    width:100%;
+    height: 100%;
+}
+
+
+/*fonts*/
+
+@font-face {
+    font-family: "starJedi";
+    src: url("../fonts/STARWARS/STARWARS.ttf");
+
+}
+
+#outOfThisWorld {
+    font-family: STARWARS;
+
+}
