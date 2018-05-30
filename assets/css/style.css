@@ -375,11 +375,11 @@ video {
     position: fixed;
     z-index: 9999;
     opacity: 0.3;
-    right: -55px;
+    right: -65px;
     -webkit-transition: right 0.5s;
     transition: right 0.5s;
-
 }
+
 .navRightPlanet:hover {
     opacity: 1;
     right: -1px;
@@ -400,6 +400,13 @@ video {
     width: 40px;
 }
 
+#planetContaner{
+    min-height: 300px;
+}
+
+#planetimg{
+    height: 490px;
+}
 
 #capsBodyPlanet{
     background: rgb(0,0,0);
@@ -409,11 +416,23 @@ video {
     position: absolute;
     margin-top: 5%;
     margin-left: 10%;
-    width: 60%;
+    width: 70%;
 }
 
+table{
+    color: white;
 
+}
 
+tr {
+    text-align: left;
+
+}
+
+td  {
+        border: 1px solid white;
+        padding: 5px;
+    }
 
 
 
@@ -437,4 +456,21 @@ video {
     #moon{
         display: block;
     }
-   }
+   
+
+   .navRightPlanet {
+    float: right;
+    padding:0px;
+    padding-top: 80px;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0.3;
+    right: -105px;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s;
+}
+#planetimg{
+    height: 320px;
+}
+
+} /*end of media query*/
