@@ -174,13 +174,11 @@ margin-right: 6px;
 }
 
 
-h1 {
+#portfolioH1 {
     padding-top: 10%;
     padding-left: 35%;
     color: white;
     margin-bottom: 150px;
-
-
 }
 
 p {
@@ -203,8 +201,8 @@ h2 {
     position: fixed;
     z-index: 9999;
     opacity: 0.3;
-    left: -60px;
-    -webkit-transition: left 0.5s; /* For Safari 3.1 to 6.0 */
+    left: -55px;
+    -webkit-transition: left 0.5s;
     transition: left 0.5s;
 
 }
@@ -213,7 +211,7 @@ h2 {
 .navLeft:hover {
     opacity: 1;
     left: -1px;
-    -webkit-transition: left 0.5s; /* For Safari 3.1 to 6.0 */
+    -webkit-transition: left 0.5s;
     transition: left 0.5s;
 
 }
@@ -224,7 +222,7 @@ h2 {
     list-style: none;
     background-color: lightblue;
     margin-bottom: 2px;
-    line-height: 30px; /*default of 16px * 3 to center the text vertically*/
+    line-height: 30px; 
     text-align: center;
     text-decoration: none;
     padding: 5px;
@@ -242,7 +240,7 @@ ul {
 
 
 footer {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 
@@ -283,27 +281,109 @@ footer {
 
 /*capstone*/
 
-iframe {
-    width: 100%; 
-    height: 315px;
-}
-
 
 video {
-    width:100%;
-    height: 100%;
+    width: 100%;
+    height: 80%;
+    object-fit: fill;
 }
 
 
 /*fonts*/
 
 @font-face {
-    font-family: "starJedi";
-    src: url("../fonts/STARWARS/STARWARS.ttf");
+    font-family: "star";
+    src: url(../fonts/sw.ttf);
 
 }
 
-#outOfThisWorld {
-    font-family: STARWARS;
-
+#out-of-this-world1 {
+    font-family: "star";
+    color: white;
+    font-size: 6em;
+    text-align: center;
 }
+#out-of-this-world2 {
+    font-family: "star";
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+#click-me-to-start{
+    font-family: "star";
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+#solar-system-card{
+    border:2px solid black;
+}
+
+#sscont{
+    position: relative;
+    top: 10px;
+}
+
+#solar-system{
+    width: 100%;
+}
+
+#earth {
+    position: absolute;
+    top: 48.2%;
+    left: 79.4%;
+    width: 10%;
+    height:auto;
+}
+#earth:hover{
+    transform: scale(1.7);
+}
+
+#mars {
+    position: absolute;
+    top: 41.3%;
+    left: 90.5%;
+    width: 3.4%;
+    height:auto;
+    transform: rotate(-25deg);
+}
+#mars:hover{
+    transform: scale(1.7);
+}
+
+#moon{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 450px) {
+    #solarsystem {
+        display: none;
+    }
+
+
+    #moon{
+        display: block;
+    }
+   }
