@@ -240,6 +240,7 @@ ul {
 
 
 footer {
+    position: 
     padding-top: 80px;
 }
 
@@ -360,6 +361,56 @@ video {
 
 
 
+
+
+
+
+
+/*per page*/
+
+.navRightPlanet {
+    float: right;
+    padding:0px;
+    padding-top: 80px;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0.3;
+    right: -55px;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s;
+
+}
+.navRightPlanet:hover {
+    opacity: 1;
+    right: -1px;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s;
+}
+.liRight {
+    list-style: none;
+    background-color: lightblue;
+    margin-bottom: 2px;
+    line-height: 30px; 
+    text-align: left;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.liRight > a > img {
+    width: 40px;
+}
+
+
+#capsBodyPlanet{
+    background: rgb(0,0,0);
+}
+
+#earthBig{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 60%;
+}
 
 
 
