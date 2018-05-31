@@ -14,7 +14,9 @@
 }
 */
 
-
+/*body {
+    position: relative;
+}*/
 
 
 .ii {
@@ -24,8 +26,12 @@
 }
 
 .iii{
-    font-size: 35px;
+    font-size: 2em;
     color: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*display: inline-block;*/
+
 }
 
 
@@ -34,6 +40,9 @@
     top: 8px;
 }
 
+#footList {
+    display: inline-block;
+}
 
 
 #form_container
@@ -104,15 +113,11 @@ margin-right: 6px;
     background: url(../images/bgbg.gif) repeat;
     opacity: .085;
     position: absolute;
-    height:250%;
+    height:100%;
     width: 100%;
     overflow: hidden;
     z-index: -1;
 
-/*    background: url(../images/bgbg.gif) repeat;
-    opacity: .085;
-    height:100%;
-    width: 100%;*/
 }
 
 
@@ -228,10 +233,12 @@ h2 {
     padding: 5px;
 }
 
-ul > li > a {
+a {
     text-decoration: none;
 
 }
+
+
 
 ul {
     padding-left: 0;
@@ -239,39 +246,42 @@ ul {
 }
 
 
-footer {
-    position: 
-    padding-top: 80px;
+
+#footer-icons {
+margin: 0 auto;
+
 }
 
-
-
-.zoom:hover {
+.zoom:hover .iii {
     transform: scale(1.5);
-
+    color: yellow;
 }
+
 
 .hoverText {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
+    /*border-bottom: 1px dotted black;*/
 }
+
+
+
 
 
 .hoverText .hoverTextShow {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
+    width: 100px;
+    background-color: grey;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 3px 0;
     font-size: 10px;
 
     /* Position the tooltip */
     position: absolute;
     z-index: 99999;
-    transform: translate(-55%, -55%);
+    transform: translate(-77%, -140%);
 }
 
 .hoverText:hover .hoverTextShow {
@@ -368,6 +378,8 @@ video {
 
 /*per page*/
 
+
+
 .navRightPlanet {
     float: right;
     padding:0px;
@@ -380,12 +392,17 @@ video {
     transition: right 0.5s;
 }
 
+
 .navRightPlanet:hover {
     opacity: 1;
     right: -1px;
     -webkit-transition: right 0.5s;
     transition: right 0.5s;
+    color: white;
+    font-weight: bold;
 }
+
+
 .liRight {
     list-style: none;
     background-color: lightblue;
@@ -409,7 +426,12 @@ video {
 }
 
 #capsBodyPlanet{
-    background: rgb(0,0,0);
+    /*background: rgb(0,0,0);*/
+    background: url(../images/capsbg2.jpg) fixed;
+    -webkit-background-size: cover; /*targets google chrome and safari web browser*/
+    -moz-background-size: cover; /*mozilla*/
+    -o-background-size: cover; /*opera*/
+    background-size: cover;
 }
 
 #earthBig{
@@ -422,6 +444,7 @@ video {
 table{
     color: white;
 
+
 }
 
 tr {
@@ -430,18 +453,35 @@ tr {
 }
 
 td  {
-        border: 1px solid white;
+        border: 2px solid white;
         padding: 5px;
+        background-color: rgba(0,0,0,0.7);
     }
 
 
 
+footer {
+    margin-top: 65px;
+}
 
 
+dt {
+    color: white;
+    font-size: 20px;
+    /*background-color: grey;*/
+}
+
+dd {
+    text-indent: 30px;
+    color: white;
+    text-align: justify;
+}
 
 
-
-
+#didYouKnowIcon {
+    width: 50px;
+    margin-bottom: 15px;
+}
 
 
 
@@ -459,18 +499,56 @@ td  {
    
 
    .navRightPlanet {
-    float: right;
-    padding:0px;
-    padding-top: 80px;
-    position: fixed;
-    z-index: 9999;
-    opacity: 0.3;
-    right: -105px;
-    -webkit-transition: right 0.5s;
-    transition: right 0.5s;
-}
-#planetimg{
-    height: 320px;
-}
+        float: right;
+        padding:0px;
+        /*padding-top: 10px;*/
+        position: fixed;
+        z-index: 9999;
+        opacity: 0.3;
+        right: -60px;
+        -webkit-transition: right 0.5s;
+        transition: right 0.5s;
+        font-size: 20px;
+        line-height: 10px;
+        transform: scale(0.6);
+    }
+
+        .navRightPlanet:hover {
+        opacity: 1;
+        right: -13px;
+        -webkit-transition: right 0.5s;
+        transition: right 0.5s;
+        color: white;
+        font-weight: bold;
+    }   
+
+    #planetimg {
+        height: 250px;
+    }
+
+    table{
+        color: white;
+        font-size: 10px;
+
+    }
+
+
+ /*   footer {
+        height: 30px;
+    }*/
+
+
 
 } /*end of media query*/
+
+
+
+
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+
+#planet-description {
+    margin-top: 190px;
+}
+
+    }
