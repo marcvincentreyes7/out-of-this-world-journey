@@ -19,6 +19,10 @@
 }*/
 
 
+header {
+    z-index: 9999;
+}
+
 #siteName {
     margin-top: 10px;
     color: white;
@@ -386,12 +390,17 @@ video {
 
 /*per page*/
 
+#planetName{
+    color: white;
+    font-family: star;
+    
+}
 
 
 .navRightPlanet {
     float: right;
     padding:0px;
-    padding-top: 80px;
+    margin-top: 80px;
     position: fixed;
     z-index: 9999;
     opacity: 0.3;
@@ -442,7 +451,7 @@ video {
     background-size: cover;
 }
 
-#earthBig{
+#planetBig{
     position: absolute;
     margin-top: 5%;
     margin-left: 10%;
@@ -498,7 +507,7 @@ dd {
 
 
 
-@media only screen and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 450px) {
     #solarsystem {
         display: none;
     }
@@ -511,10 +520,9 @@ dd {
 
    .navRightPlanet {
         float: right;
-        padding:0px;
-        /*padding-top: 10px;*/
+        margin: 0;
         position: fixed;
-        z-index: 9999;
+        z-index: 999;
         opacity: 0.3;
         right: -60px;
         -webkit-transition: right 0.5s;
@@ -541,6 +549,10 @@ dd {
         color: white;
         font-size: 10px;
 
+    }
+
+    h3 {
+        font-size: 1rem;
     }
 
 
