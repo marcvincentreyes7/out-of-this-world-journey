@@ -41,7 +41,7 @@
 					<ul class="navbar-nav ml-auto">
 
 						<li class="nav-item ml-auto navAlign" id="home"> <!-- navAlign - to make the items on the center of nav -->
-							<a class="nav-link" href="#"> <i class="fas fa-home ii"></i>Home</a>
+							<a class="nav-link" href="index.html"> <i class="fas fa-home ii"></i>Home</a>
 						</li>
 
 						<li class="nav-item ml-auto navAlign" id="about">
@@ -49,7 +49,7 @@
 						</li>
 
 						<li class="nav-item ml-auto navAlign" id="contact">
-							<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope ii"></i>Contact</a>
+							<a class="nav-link btn"  data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope ii"></i>Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -60,7 +60,7 @@
 			</div>
 		</header>
 
-		<nav class="navLeft"> <!-- vertical nav or tabs -->
+		<!-- <nav class="navLeft"> 
 			<div class="logo">
 				<img src="" alt="logo">
 			</div>
@@ -76,9 +76,9 @@
 				<li class="liLeft"><a href="#uranus">Uranus</a></li>
 				<li class="liLeft"><a href="#neptune">Neptune</a></li>
 			</ul>
-		</nav> <!-- end of Nav -->
+		</nav> 
 
-	</div> <!-- end of container fluid -->
+	</div> --> <!-- end of container fluid -->
 
 	<br>
 		<br>
@@ -98,8 +98,8 @@
 					<div class="card-body col-md-12 col-sm-12 col-12">
 						<div class=""></div>
 					    <div id="form_container">
-					        <h2>Contact Us</h2>
-					        <p>
+					        <h2 id="modalFont">Contact Us</h2>
+					        <p id="modalFont">
 					           Please send your message below. We will get back to you at the earliest!
 					        </p>
 					        <form role="form" method="post" id="reused_form">
@@ -160,11 +160,11 @@
 			</div>
 			<h3 id="out-of-this-world2">Are You Ready For An</h3>
 			<h1 id="out-of-this-world1">OUT OF THIS WORLD</h1>
-			<h3 id="out-of-this-world2">Journey ??</h3>
+			<h3 id="out-of-this-world2">Journey??</h3>
 
-
-			<a href="solarsystem-map.html">Click Me To Start</a>
-
+			<form>
+				<a href="solarsystem-map.html" class="btn btn-danger" id="clickMe">Start Your Tour</a>
+			</form>
 			<!-- <div class="row">
 				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 					<div class="card" id="solar-system-card">
@@ -175,13 +175,12 @@
 		</main>
 	</div> <!-- end container-fluid -->
 
-	<div class="container-fluid">
-			<footer class="row">
-				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	<footer >
+				<!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> -->
 					<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 
-						<div>
-							<ul class="navbar-nav ml-auto">
+						<div id="footer-icons">
+							<ul class="navbar-nav text-center" id="footList">
 
 								<li class="nav-item zoom hoverText" id="facebook">
 									<a class="nav-link" href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook iii"></i><span class="hoverTextShow">Go to facebook.com</span></a>
@@ -204,12 +203,9 @@
 
 					</nav>
 
-				</div>
+				<!-- </div> -->
 			</footer>
-		</div>
-		
 	
-
 
 
 
