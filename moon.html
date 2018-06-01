@@ -22,7 +22,7 @@
 
  
 </head>
-<body id="capsBody1stPage">
+<body id="capsBodyPlanet">
 
 	
 
@@ -41,7 +41,7 @@
 					<ul class="navbar-nav ml-auto">
 
 						<li class="nav-item ml-auto navAlign" id="home"> <!-- navAlign - to make the items on the center of nav -->
-							<a class="nav-link" href="#"> <i class="fas fa-home ii"></i>Home</a>
+							<a class="nav-link" href="index.html"> <i class="fas fa-home ii"></i>Home</a>
 						</li>
 
 						<li class="nav-item ml-auto navAlign" id="about">
@@ -60,21 +60,22 @@
 			</div>
 		</header>
 
-		<nav class="navLeft"> <!-- vertical nav or tabs -->
+		<nav class="navRightPlanet"> <!-- vertical nav or tabs -->
 			<div class="logo">
-				<img src="" alt="logo">
+				<span id="travelTo"><i class="fas fa-rocket"></i> Travel To:</span>
 			</div>
 			<ul>
-				
-				<li class="liLeft"><a href="#sun">Sun</a></li>
-				<li class="liLeft"><a href="#mercury">Mercury</a></li>
-				<li class="liLeft"><a href="#venus">Venus</a></li>
-				<li class="liLeft"><a href="earth.html">Earth</a></li>
-				<li class="liLeft"><a href="#mars">Mars</a></li>
-				<li class="liLeft"><a href="#jupiter">Jupiter</a></li>
-				<li class="liLeft"><a href="#saturn">Saturn</a></li>
-				<li class="liLeft"><a href="#uranus">Uranus</a></li>
-				<li class="liLeft"><a href="#neptune">Neptune</a></li>
+				<li class="liRight"><a href="sun.html"><img src="assets/images/planets/sunBig.png"> Sun</a></li>
+				<li class="liRight"><a href="moon.html"><img src="assets/images/planets/moonBig.png"> Moon</a></li>
+				<li class="liRight"><a href="mercury.html"><img src="assets/images/planets/mercuryBig.png"> Mercury</a></li>
+				<li class="liRight"><a href="venus.html"><img src="assets/images/planets/venusBig.png"> Venus</a></li>
+				<li class="liRight"><a href="earth.html"><img src="assets/images/planets/earthBig.png"> Earth</a></li>
+				<li class="liRight"><a href="mars.html"><img src="assets/images/planets/marsBig.png"> Mars</a></li>
+				<li class="liRight"><a href="jupiter.html"><img src="assets/images/planets/jupiterBig.png"> Jupiter</a></li>
+				<li class="liRight"><a href="saturn.html"><img src="assets/images/planets/saturnBig.png"> Saturn</a></li>
+				<li class="liRight"><a href="uranus.html"><img src="assets/images/planets/uranusBig.png"> Uranus</a></li>
+				<li class="liRight"><a href="neptune.html"><img src="assets/images/planets/neptuneBig.png"> Neptune</a></li>
+				<li class="liRight"><a href="neptune.html"><img src="assets/images/planets/plutoBig.png"> Pluto</a></li>
 			</ul>
 		</nav> <!-- end of Nav -->
 
@@ -149,41 +150,82 @@
 		<br>
 
 
-	<div class="container-fluid" id="sscont">	
- 		<main>
-			<div class="row" id="solarsystem">
-				<div class="col-md-12 col-lg-12 col-xl-12">
-					<div class="card" id="solar-system-card">
-						<img id="solar-system" src="assets/images/planets/solar-system.jpg">
-					</div>
+	<div class="container-fluid">
+		<main>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-lg-6" id="planetContaner">
+					<div class="row">
+						<div class="col-lg-12" id="planetimg">
+							<h1 id="planetName">The Moon</h1>
+							<img id="planetBig" src="assets/images/planets/moonBig.png">	
+						</div>
+						<div class="col-lg-12" id="planet-description">
+							<dt>Did You Know? <img id="didYouKnowIcon" src="assets/images/didYouKnow.png"></dt>
+							<dd>Compared with the billions of other stars in the universe, the sun is unremarkable. But for Earth and the other planets that revolve around it, the sun is a powerful center of attention. It holds the solar system together; pours life-giving light, heat, and energy on Earth; and generates space weather.</dd>
+							<dd>At about 864,000 miles (1.4 million kilometers) wide, it could hold 109 planet Earths across its surface. If the sun were a hollow ball, more than a million Earths could stuff inside it.</dd>
+						</div>
+
+					</div>				
 				</div>
-			</div>
-			<div>
-				<a href="earth.html"><img id="earth" src="assets/images/planets/earth.png"></a>
-			</div>
 
-			<div>
-				<img id="mars" src="assets/images/planets/mars.png">
-			</div>
+				<div class="col-12 col-sm-12 col-md-5 col-lg-5 col-lg-5">
 
+					<table>
+						<tr>
+							<th colspan="2"><h3>Moon Profile<h3></th> <!-- Empty cell -->
+						</tr>
+						<tr>
+							<td>Mean diameter</td>
+							<td>3,476 km</td>
+						</tr>
+						<tr>
+							<td>Volume</td>
+							<td>2.199 x 10<sub>10</sub> km<sup>3</sup></td>
+						</tr>
+						<tr>
+							<td>Mass</td>
+							<td>7.349 x 10<sup>22</sup> kg</td>
+						</tr>
+						<tr>
+							<td>Mean density</td>
+							<td>3.342</td>
+						</tr>
+						<tr>
+							<td>Surface gravity</td>
+							<td>1.62 m/s<sup>2</sup></td>
+						</tr>
+						<tr>
+							<td>Escape velocity</td>
+							<td>2.38 km/s</td>
+						</tr>
+						<tr>
+							<td>Visual albedo</td>
+							<td>0.12</td>
+						</tr>
+						<tr>
+							<td>Visual magnitude</td>
+							<td>+0.21</td>
+						</tr>
+					</table>
 
-			<div class="row" id="moon">
-				<div class="col-12 col-sm-12">
-					<img id="solar-system" src="assets/images/planets/moon-animation35.gif">
 				</div>
-			</div> 
-
-
+			</div> <!-- end of row -->
+			
 		</main>
+
 	</div> <!-- end container-fluid -->
 
-	<div class="container-fluid">
-			<footer class="row">
-				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+
+
+
+	<!-- <div class="container-fluid"> -->
+			<footer >
+				<!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> -->
 					<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 
-						<div>
-							<ul class="navbar-nav ml-auto">
+						<div id="footer-icons">
+							<ul class="navbar-nav text-center" id="footList">
 
 								<li class="nav-item zoom hoverText" id="facebook">
 									<a class="nav-link" href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook iii"></i><span class="hoverTextShow">Go to facebook.com</span></a>
@@ -206,9 +248,9 @@
 
 					</nav>
 
-				</div>
+				<!-- </div> -->
 			</footer>
-		</div>
+		<!-- </div> -->
 		
 	
 
