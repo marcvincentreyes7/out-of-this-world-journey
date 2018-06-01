@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>Out Of This World</title>
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- extrnal css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- external link - font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	
+	<!-- fab icon -->
+	<link rel="icon" type="image/gif/png" href="assets/images/saturn.png">
+
+ 
+</head>
+<body id="capsBodyPlanet">
+
+	
+
+	<div class="container-fluid">
+
+		<header class="row fixed-top"><!-- fixed-top -->
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+					<h3 id="siteName">Out of This World Journey</h3>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+						<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+
+						<li class="nav-item ml-auto navAlign" id="home"> <!-- navAlign - to make the items on the center of nav -->
+							<a class="nav-link" href="index.html"> <i class="fas fa-home ii"></i>Home</a>
+						</li>
+
+						<li class="nav-item ml-auto navAlign" id="about">
+							<a class="nav-link" href="#"> <i class="fas fa-info-circle ii"></i>About</a>
+						</li>
+
+						<li class="nav-item ml-auto navAlign" id="contact">
+							<a class="nav-link btn"  data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope ii"></i>Contact</a>
+						</li>
+					</ul>
+				</div>
+
+				
+
+				</nav>
+			</div>
+		</header>
+
+		<nav class="navRightPlanet"> <!-- vertical nav or tabs -->
+			<div class="logo">
+				<span id="travelTo"><i class="fas fa-rocket"></i> Travel To:</span>
+			</div>
+			<ul>
+				<li class="liRight"><a href="sun.html"><img src="assets/images/planets/sunBig.png"> Sun</a></li>
+				<li class="liRight"><a href="moon.html"><img src="assets/images/planets/moonBig.png"> Moon</a></li>
+				<li class="liRight"><a href="mercury.html"><img src="assets/images/planets/mercuryBig.png"> Mercury</a></li>
+				<li class="liRight"><a href="venus.html"><img src="assets/images/planets/venusBig.png"> Venus</a></li>
+				<li class="liRight"><a href="earth.html"><img src="assets/images/planets/earthBig.png"> Earth</a></li>
+				<li class="liRight"><a href="mars.html"><img src="assets/images/planets/marsBig.png"> Mars</a></li>
+				<li class="liRight"><a href="jupiter.html"><img src="assets/images/planets/jupiterBig.png"> Jupiter</a></li>
+				<li class="liRight"><a href="saturn.html"><img src="assets/images/planets/saturnBig.png"> Saturn</a></li>
+				<li class="liRight"><a href="uranus.html"><img src="assets/images/planets/uranusBig.png"> Uranus</a></li>
+				<li class="liRight"><a href="neptune.html"><img src="assets/images/planets/neptuneBig.png"> Neptune</a></li>
+				<li class="liRight"><a href="pluto.html"><img src="assets/images/planets/plutoBig.png"> Pluto</a></li>
+			</ul>
+		</nav> <!-- end of Nav -->
+
+	</div> <!-- end of container fluid -->
+
+	<br>
+		<br>
+
+
+	<!-- modal testing -->
+
+		<div class="container">
+		  <!-- Modal -->
+		  <div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		          
+		        <div class="card" id="showContact">
+					<div class="card-body col-md-12 col-sm-12 col-12">
+						<div class=""></div>
+					    <div id="form_container">
+					        <h2 id="modalFont">Contact Us</h2>
+					        <p id="modalFont">
+					           Please send your message below. We will get back to you at the earliest!
+					        </p>
+					        <form role="form" method="post" id="reused_form">
+
+					        	<div class="row">
+					                <div class="col-sm-6 form-group">
+					                    <label for="name">
+					                        Your Name:</label>
+					                    <input type="text" class="form-control" id="name" name="name" required>
+					                </div>
+					                <div class="col-sm-6 form-group">
+					                    <label for="email">
+					                        Email:</label>
+					                    <input type="email" class="form-control" id="email" name="email" required>
+					                </div>
+					            </div>
+
+					            <div class="row">
+					                <div class="col-sm-12 form-group">
+					                    <label for="message">
+					                        Message:</label>
+					                    <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
+					                </div>
+					            </div>
+
+					            <div class="row">
+					                <div class="col-sm-12 form-group">
+					                    <button type="button" class="btn btn-md" data-dismiss="modal">Send →</button>
+					                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					                </div>
+					            </div>
+
+					        </form>
+					        
+
+					    </div>
+					    </div> <!-- end row, end card body -->
+					</div>  <!-- end card -->
+
+				</div> <!-- end of email beta -->
+		     </div>
+		      
+		    </div>
+		 </div> <!-- end of modal -->
+
+		<br>
+		<br>
+
+
+	<div class="container-fluid">
+		<main>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-lg-6" id="planetContaner">
+					<div class="row">
+						<div class="col-lg-12" id="planetimg">
+							<h1 id="planetName">Mercury</h1>
+							<img id="planetBig" src="assets/images/planets/venusBig.png">	
+						</div>
+						<div class="col-lg-12" id="planet-description">
+							<dt>Did You Know? <img id="didYouKnowIcon" src="assets/images/didYouKnow.png"></dt>
+							<dd>Venus is the second planet from the Sun, orbiting it every 224.7 Earth days. It has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets (meaning the Sun would rise in the west and set in the east). It does not have any natural satellites. It is named after the Roman goddess of love and beauty.</dd>
+						</div>
+
+					</div>				
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-5 col-lg-5 col-lg-5">
+
+					<table>
+						<tr>
+							<th colspan="2"><h3>Planet Profile<h3></th> <!-- Empty cell -->
+						</tr>
+						<tr>
+							<td>Mass (kg)</td>
+							<td>4.87 x 10<sup>24</sup></td>
+						</tr>
+						<tr>
+							<td>Diameter (km)</td>
+							<td>12104</td>
+						</tr>
+						<tr>
+							<td>Mean density (kg/m<sup>3</sup>)</td>
+							<td>5420</td>
+						</tr>
+						<tr>
+							<td>Mean density (kg/m<sup>3</sup>)</td>
+							<td>5250</td>
+						</tr>
+						<tr>
+							<td>Escape velocity (m/s)</td>
+							<td>10400</td>
+						</tr>
+						<tr>
+							<td>Average distance from Sun</td>
+							<td>0.723 AU (108,208,930 km)</td>
+						</tr>
+						<tr>
+							<td>Rotation period (length of day in Earth days)</td>
+							<td>243.02 (retrograde)</td>
+						</tr>
+						<tr>
+							<td>Revolution period (length of year in Earth days)</td>
+							<td>224.7</td>
+						</tr>
+						<tr>
+							<td>Obliquity (tilt of axis degrees)</td>
+							<td>178</td>
+						</tr>
+						<tr>
+							<td>Orbit inclination (degrees)</td>
+							<td>3.39</td>
+						</tr>
+						<tr>
+							<td>Mean surface temperature (K)</td>
+							<td>726</td>
+						</tr>
+						<tr>
+							<td>Maximum surface temperature (K)</td>
+							<td>726</td>
+						</tr>
+						<tr>
+							<td>Highest point on surface</td>
+							<td>Maxwell Montes (17 km above mean planetary radius)</td>
+						</tr>
+						<tr>
+							<td>Atmospheric components</td>
+							<td>
+								<ul>
+									<li>96% carbon dioxide,</li>
+									<li>3% nitrogen</li>
+									<li>0.1% water vapor</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Surface materials</td>
+							<td>basaltic rock and altered materials</td>
+						</tr>
+
+					</table>
+
+				</div>
+			</div> <!-- end of row -->
+			
+		</main>
+
+	</div> <!-- end container-fluid -->
+
+
+
+
+
+	<!-- <div class="container-fluid"> -->
+			<footer >
+				<!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> -->
+					<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+						<div id="footer-icons">
+							<ul class="navbar-nav text-center" id="footList">
+
+								<li class="nav-item zoom hoverText" id="facebook">
+									<a class="nav-link" href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook iii"></i><span class="hoverTextShow">Go to facebook.com</span></a>
+								</li>
+
+								<li class="nav-item zoom hoverText" id="twitter"> 
+									<a class="nav-link" href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter-square iii"></i><span class="hoverTextShow">Go to twitter.com</span></a>
+								</li>
+
+								<li class="nav-item zoom hoverText" id="github">
+									<a class="nav-link" href="https://github.com/" target="_blank"><i class="fab fa-github-square iii"></i><span class="hoverTextShow">Go to github.com</span></a>
+								</li>
+
+								<li class="nav-item zoom hoverText" id="gitlab">
+									<a class="nav-link" href="https://about.gitlab.com/" target="_blank"><i class="fab fa-gitlab iii"></i><span class="hoverTextShow">Go to gitlab</span></a>
+								</li>
+
+							</ul>
+						</div>
+
+					</nav>
+
+				<!-- </div> -->
+			</footer>
+		<!-- </div> -->
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- external custom js -->
+
+
+
+	<!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- external bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
