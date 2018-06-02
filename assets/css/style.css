@@ -213,13 +213,92 @@ h2 {
     color: white;
 }
 
+.btn {
+    color: red;
+}
+
+
+/*for button design*/
 
 #clickMe{
-    color: white;
-    border:2px solid grey;
+    /*color: #d5402b;;*/
+    position: relative;
+    border:3px solid white;
     margin-left: 45%;
     margin-top: 10px;
+    overflow: hidden;
 }
+
+
+#insideBtnTxt{
+    color: white;
+    font-weight: bold;
+}
+
+#insideBtnRight{
+    float: left;
+    position: absolute;
+    top: -20px;
+    right: -150px;
+    transition: right 0.7s;
+    width: 50px;
+    height: 100px;
+    background-color: white;
+}
+
+#insideBtnLeft{
+    float: left;
+    position: absolute;
+    top: -20px;
+    left: -150px;
+    transition: left 0.7s;
+    width: 50px;
+    height: 100px;
+    background-color: white;
+}
+
+#clickMe:hover #insideBtnRight{
+    float: left;
+    position: absolute;
+    top: -20px;
+    right: 150px;
+    transition: right 0.7s;
+    width: 50px;
+    height: 100px;
+    background-color: red;
+}
+
+#clickMe:hover #insideBtnLeft{
+    float: left;
+    position: absolute;
+    top: -20px;
+    left: 150px;
+    transition: left 0.7s;
+    width: 50px;
+    height: 100px;
+    background-color: red;
+}
+
+#clickMe:hover{
+    /*color: #d5402b;;*/
+    position: relative;
+    border:3px solid red;
+    background-color: white;
+    margin-left: 45%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#clickMe:hover #insideBtnTxt{
+    color: red;
+    font-weight: bold;
+}
+
+/*end of button design*/
+
+
+
+
 
 
 .navLeft {
@@ -516,7 +595,7 @@ video {
     position: fixed;
     z-index: 9999;
     opacity: 0.3;
-    right: -65px;
+    right: -80px;
     -webkit-transition: right 0.5s;
     transition: right 0.5s;
 }
@@ -531,6 +610,11 @@ video {
     font-weight: bold;
 }
 
+.liRight:hover{
+    transform: scale(1.2);
+    border:3px solid black;
+}
+
 
 .liRight {
     list-style: none;
@@ -539,7 +623,8 @@ video {
     line-height: 30px; 
     text-align: left;
     text-decoration: none;
-    padding: 5px;
+    padding: 3px;
+    width: 130px;
 }
 
 .liRight > a > img {
@@ -643,22 +728,33 @@ dd {
         position: fixed;
         z-index: 999;
         opacity: 0.3;
-        right: -60px;
+        right: -90px;
         -webkit-transition: right 0.5s;
         transition: right 0.5s;
         font-size: 20px;
         line-height: 10px;
-        transform: scale(0.6);
+        transform: scale(0.5);
     }
 
         .navRightPlanet:hover { /*:hover*/
         opacity: 1;
-        right: -13px;
+        right: -40px;
         -webkit-transition: right 0.5s;
         transition: right 0.5s;
         color: white;
         font-weight: bold;
     }   
+
+    .liRight {
+        list-style: none;
+        background-color: lightblue;
+        margin-bottom: 2px;
+        line-height: 30px; 
+        text-align: left;
+        text-decoration: none;
+        padding: 3px;
+        width: 150px;
+    }
 
     #planetimg {
         height: 370px;
