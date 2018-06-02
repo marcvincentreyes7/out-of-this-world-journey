@@ -454,9 +454,18 @@ video {
     background-color: rgba(255,255,255,0.0);
 }
 
-/*#sunSS:hover {
-    transform: scale(1.2);
-}*/
+#planetHoverNameSun {
+    position: absolute;
+    top: 35%;
+    left: 58%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#sunSS:hover #planetHoverNameSun {
+    display: block;
+}
 
 #moonSS {
     position: absolute;
@@ -466,8 +475,21 @@ video {
     height: auto;
 }
 
+#planetHoverNameMoon {
+    position: absolute;
+    top: 45%;
+    left: 86.5%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 #moonSS:hover{
     transform: scale(1.7);
+}
+
+#moonSS:hover + #planetHoverNameMoon{
+    display: block;
 }
 
 #mercurySS {
@@ -477,8 +499,23 @@ video {
     width: 1.9%;
     height: auto;
 }
+
+#planetHoverNameMercury {
+    position: absolute;
+    top: 57%;
+    left: 69.3%;
+    color: white;
+    font-size: 20px;
+     display: none; 
+}
+
 #mercurySS:hover{
     transform: scale(1.7);
+}
+
+
+#mercurySS:hover + #planetHoverNameMercury{
+    display: block;
 }
 
 #venusSS {
@@ -488,8 +525,22 @@ video {
     width: 4%;
     height: auto;
 }
+
+#planetHoverNameVenus {
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    color: white;
+    font-size: 20px;
+     display: none; 
+}
+
 #venusSS:hover{
     transform: scale(1.7);
+}
+
+#venusSS:hover + #planetHoverNameVenus{
+    display: block;
 }
 
 
@@ -500,8 +551,22 @@ video {
     width: 4.1%;
     height: auto;
 }
+
+#planetHoverNameEarth {
+    position: absolute;
+    top: 44%;
+    left: 83.7%;
+    color: white;
+    font-size: 20px;
+     display: none; 
+}
+
 #earthSS:hover{
     transform: scale(1.7);
+}
+
+#earthSS:hover + #planetHoverNameEarth{
+    display: block;
 }
 
 
@@ -512,8 +577,22 @@ video {
     width: 3.5%;
     height: auto;
 }
+
+#planetHoverNameMars {
+    position: absolute;
+    top: 36.5%;
+    left: 91.2%;
+    color: white;
+    font-size: 20px;
+     display: none; 
+}
+
 #marsSS:hover{
     transform: scale(1.7);
+}
+
+#marsSS:hover + #planetHoverNameMars{
+    display: block;
 }
 
 #jupiterSS {
@@ -523,6 +602,20 @@ video {
     width: 6.7%;
     height: auto;
 }
+
+#planetHoverNameJupiter {
+    position: absolute;
+    top: 8.5%;
+    left: 35.2%;
+    color: white;
+    font-size: 20px;
+     display: none; 
+}
+
+#jupiterSS:hover + #planetHoverNameJupiter{
+    display: block;
+}
+
 #jupiterSS:hover{
     transform: scale(1.7);
 }
@@ -534,6 +627,20 @@ video {
     width: 9.7%;
     height: auto;
 }
+
+#planetHoverNameSaturn {
+    position: absolute;
+    top: 7%;
+    left: 27.2%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#saturnSS:hover + #planetHoverNameSaturn{
+    display: block;
+}
+
 #saturnSS:hover{
     transform: scale(1.2);
 }
@@ -546,8 +653,22 @@ video {
     width: 3.7%;
     height: auto;
 }
+
+#planetHoverNameUranus {
+    position: absolute;
+    top: 6%;
+    left: 20.2%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 #uranusSS:hover{
     transform: scale(1.2);
+}
+
+#uranusSS:hover + #planetHoverNameUranus{
+    display: block;
 }
 
 
@@ -558,8 +679,22 @@ video {
     width: 3.2%;
     height: auto;
 }
+
+#planetHoverNameNeptune {
+    position: absolute;
+    top: 4.5%;
+    left: 14.5%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 #neptuneSS:hover{
     transform: scale(1.5);
+}
+
+#neptuneSS:hover + #planetHoverNameNeptune{
+    display: block;
 }
 
 
@@ -570,8 +705,22 @@ video {
     width: 1.5%;
     height: auto;
 }
+
+#planetHoverNamePluto {
+    position: absolute;
+    top: 5%;
+    left: 2.3%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 #plutoSS:hover{
     transform: scale(2);
+}
+
+#plutoSS:hover + #planetHoverNamePluto{
+    display: block;
 }
 
 
@@ -798,6 +947,7 @@ dd {
     #plutoSS {
         display: none;
     }
+
 
     #sunSSS {
         display: block;
