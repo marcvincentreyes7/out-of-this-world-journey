@@ -38,7 +38,7 @@ header {
 }
 
 .iii{
-    font-size: 2em;
+    font-size: 1.5em;
     color: orange;
     padding-left: 15px;
     padding-right: 15px;
@@ -425,12 +425,12 @@ video {
     text-align: center;
 }
 
-#click-me-to-start{
+/*#click-me-to-start{
     font-family: "star";
     color: white;
     font-size: 2em;
     text-align: center;
-}
+}*/
 
 #solar-system-card{
     border:2px solid black;
@@ -454,75 +454,169 @@ video {
     background-color: rgba(255,255,255,0.0);
 }
 
-/*#sunSS:hover {
-    transform: scale(1.2);
-}*/
+#planetHoverNameSun {
+    position: absolute;
+    top: 34%;
+    left: 58%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#sunSS:hover #planetHoverNameSun {
+    display: block;
+}
 
 #moonSS {
     position: absolute;
     top: 49.5%;
-    left: 87%;
+    left: 86.9%;
     width: 1.6%;
     height: auto;
+}
+
+#planetHoverNameMoon {
+    position: absolute;
+    top: 44.4%;
+    left: 85.8%;
+    color: white;
+    font-size: 20px;
+    display: none;
 }
 
 #moonSS:hover{
     transform: scale(1.7);
 }
 
+#moonSS:hover + #planetHoverNameMoon{
+    display: block;
+}
+
 #mercurySS {
     position: absolute;
-    top: 61.7%;
-    left: 70.3%;
-    width: 1.9%;
+    top: 61.3%;
+    left: 70.2%;
+    width: 2.1%;
     height: auto;
 }
+
+#planetHoverNameMercury {
+    position: absolute;
+    top: 55.5%;
+    left: 69%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 #mercurySS:hover{
     transform: scale(1.7);
 }
 
+
+#mercurySS:hover + #planetHoverNameMercury{
+    display: block;
+}
+
 #venusSS {
     position: absolute;
-    top: 55.4%;
-    left: 76.7%;
+    top: 55.2%;
+    left: 76.5%;
     width: 4%;
     height: auto;
 }
+
+#planetHoverNameVenus {
+    position: absolute;
+    top: 49%;
+    left: 76.5%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 #venusSS:hover{
     transform: scale(1.7);
+}
+
+#venusSS:hover + #planetHoverNameVenus{
+    display: block;
 }
 
 
 #earthSS {
     position: absolute;
     top: 49.5%;
-    left: 83.0%;
+    left: 83%;
     width: 4.1%;
     height: auto;
 }
+
+#planetHoverNameEarth {
+    position: absolute;
+    top: 43%;
+    left: 83.5%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 #earthSS:hover{
     transform: scale(1.7);
+}
+
+#earthSS:hover + #planetHoverNameEarth{
+    display: block;
 }
 
 
 #marsSS {
     position: absolute;
-    top: 41.5%;
-    left: 90.6%;
+    top: 41.2%;
+    left: 90.5%;
     width: 3.5%;
     height: auto;
 }
+
+
+#planetHoverNameMars {
+    position: absolute;
+    top: 34.5%;
+    left: 90.5%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 #marsSS:hover{
     transform: scale(1.7);
+}
+
+#marsSS:hover + #planetHoverNameMars{
+    display: block;
 }
 
 #jupiterSS {
     position: absolute;
     top: 16.9%;
-    left: 33.3%;
+    left: 33.5%;
     width: 6.7%;
     height: auto;
 }
+
+#planetHoverNameJupiter {
+    position: absolute;
+    top: 7%;
+    left: 34.2%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#jupiterSS:hover + #planetHoverNameJupiter{
+    display: block;
+}
+
 #jupiterSS:hover{
     transform: scale(1.7);
 }
@@ -530,10 +624,24 @@ video {
 #saturnSS {
     position: absolute;
     top: 10.9%;
-    left: 23.6%;
+    left: 23.8%;
     width: 9.7%;
     height: auto;
 }
+
+#planetHoverNameSaturn {
+    position: absolute;
+    top: 5%;
+    left: 26%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#saturnSS:hover + #planetHoverNameSaturn{
+    display: block;
+}
+
 #saturnSS:hover{
     transform: scale(1.2);
 }
@@ -546,32 +654,74 @@ video {
     width: 3.7%;
     height: auto;
 }
+
+#planetHoverNameUranus {
+    position: absolute;
+    top: 5%;
+    left: 19.2%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 #uranusSS:hover{
     transform: scale(1.2);
+}
+
+#uranusSS:hover + #planetHoverNameUranus{
+    display: block;
 }
 
 
 #neptuneSS {
     position: absolute;
-    top: 9%;
-    left: 14.8%;
+    top: 9.2%;
+    left: 14.9%;
     width: 3.2%;
     height: auto;
 }
+
+#planetHoverNameNeptune {
+    position: absolute;
+    top: 2.5%;
+    left: 13.5%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 #neptuneSS:hover{
     transform: scale(1.5);
+}
+
+#neptuneSS:hover + #planetHoverNameNeptune{
+    display: block;
 }
 
 
 #plutoSS {
     position: absolute;
-    top: 10.1%;
-    left: 2.5%;
+    top: 9.8%;
+    left: 3%;
     width: 1.5%;
     height: auto;
 }
+
+#planetHoverNamePluto {
+    position: absolute;
+    top: 4%;
+    left: 2.3%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 #plutoSS:hover{
     transform: scale(2);
+}
+
+#plutoSS:hover + #planetHoverNamePluto{
+    display: block;
 }
 
 
@@ -582,6 +732,7 @@ video {
 /*per page*/
 
 #planetName{
+    padding-left: 15px;
     color: white;
     font-family: star;
     
@@ -591,7 +742,7 @@ video {
 .navRightPlanet {
     float: right;
     padding:0px;
-    margin-top: 80px;
+    margin-top: 50px;
     position: fixed;
     z-index: 9999;
     opacity: 0.3;
@@ -678,7 +829,7 @@ td > ul > li {
 
 
 footer {
-    margin-top: 65px;
+    margin-top: 20%;
 }
 
 
@@ -710,21 +861,54 @@ dd {
 #saturnSSS,
 #uranusSSS,
 #neptuneSSS,
-#plutoSSS{
+#plutoSSS,
+#planetNamePhoneSection,
+#planetNamePhone {
     display: none;
 }
 
 
-
+/*iphone4*/
 @media (min-width: 220px) and (max-width: 450px) {
+
     #solarsystem {
         display: none;
     }
 
+    #planetNamePhoneSection{
+        display: block;
+    }
+
+    
+    #planetNamePhone {
+        margin-top: 40px;
+        color: white;
+        font-family: star;
+        display: block;
+    }
+
+
+    #siteName{
+        font-size: 13px;
+    }
+
+    .navbar-toggler{
+        width: 45px;
+        height:25px;
+        padding: 0;
+    }
+
+    .navbar-toggler-icon{
+        width: 20px;
+        height:20px;
+        margin-bottom: 3px;
+    }
+
    
    .navRightPlanet {
+        margin-top: -50px;
         float: right;
-        margin: 0;
+        /*margin: 0;*/
         position: fixed;
         z-index: 999;
         opacity: 0.3;
@@ -783,8 +967,23 @@ dd {
     }
 
     #clickMe{
-        margin-left: 25%;
+    position: relative;
+    border:3px solid white;
+    margin-left: 25%;
+    margin-top: 10px;
+    overflow: hidden;
     }
+
+    #clickMe:hover{
+    position: relative;
+    border:3px solid red;
+    background-color: white;
+    margin-left: 25%;
+    margin-top: 10px;
+    overflow: hidden;
+    }
+
+
     #sunSS,
     #moonSS, 
     #mercurySS,
@@ -798,6 +997,7 @@ dd {
     #plutoSS {
         display: none;
     }
+
 
     #sunSSS {
         display: block;
@@ -848,16 +1048,9 @@ dd {
         width: 100%;
     }
 
-
-
-
-
-
-
-
- /*   footer {
-        height: 30px;
-    }*/
+    footer {
+        margin-top: 78%;
+    }
 
 
 
@@ -867,11 +1060,735 @@ dd {
 
 
 
+/*iphone4 landscpe*/
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 701px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+
+    #solarsystem {
+        display: none;
+    }
+
+    #planetNamePhoneSection{
+        display: block;
+        /*transform: scale(0.6);*/
+    }
+
+    
+    #planetNamePhone {
+        margin-top: 40px;
+        color: white;
+        font-family: star;
+        display: block;        
+    }
+
+    #planet-description {
+        margin-top: 20%;
+    }
+
+
+    #siteName{
+        font-size: 13px;
+    }
+
+    .navbar-toggler{
+        width: 45px;
+        height:25px;
+        padding: 0;
+    }
+
+    .navbar-toggler-icon{
+        width: 20px;
+        height:20px;
+        margin-bottom: 3px;
+    }
+
+   
+   .navRightPlanet {
+        margin-top: -50px;
+        float: right;
+        /*margin: 0;*/
+        position: fixed;
+        z-index: 999;
+        opacity: 0.3;
+        right: -90px;
+        -webkit-transition: right 0.5s;
+        transition: right 0.5s;
+        font-size: 20px;
+        line-height: 10px;
+        transform: scale(0.3);
+    }
+
+        .navRightPlanet:hover { /*:hover*/
+        opacity: 1;
+        right: -40px;
+        -webkit-transition: right 0.5s;
+        transition: right 0.5s;
+        color: white;
+        font-weight: bold;
+    }   
+
+    .liRight {
+        list-style: none;
+        background-color: lightblue;
+        margin-bottom: 2px;
+        line-height: 30px; 
+        text-align: left;
+        text-decoration: none;
+        padding: 3px;
+        width: 150px;
+    }
+
+    #planetimg {
+        height: 370px;
+    }
+
+    table{
+        color: white;
+        font-size: 10px;
+
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    video {
+        display: none;
+    }
+
+    #out-of-this-world2 {
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    #out-of-this-world1 {
+        font-size: 35px;
+    }
+
+    #clickMe{
+    position: absolute;
+    border:3px solid white;
+    /*margin-left: 143px;*/
+    margin-left: 30%;
+    margin-top: 10px;
+    overflow: hidden;
+    }
+
+    #clickMe:hover{
+    position: absolute;
+    border:3px solid red;
+    background-color: white;
+    margin-left: 30%;
+    margin-top: 10px;
+    overflow: hidden;
+    }
+
+
+    #sunSS,
+    #moonSS, 
+    #mercurySS,
+    #venusSS,
+    #earthSS,
+    #marsSS,
+    #jupiterSS,
+    #saturnSS,
+    #uranusSS,
+    #neptuneSS,
+    #plutoSS {
+        display: none;
+    }
+
+
+    #sunSSS {
+        display: block;
+        width: 65%;
+    }
+
+    #moonSSS{
+        display: block;
+        width: 65%;
+    }
+
+    #mercurySSS{
+        display: block;
+        width: 65%;
+    }
+
+    #venusSSS{
+        display: block;
+        width: 65%;
+    }
+
+    #earthSSS{
+        display: block;
+        width: 65%;
+    }
+    #marsSSS{
+        display: block;
+        width: 65%;
+    }
+    #jupiterSSS{
+        display: block;
+        width: 65%;
+    }
+    #saturnSSS{
+        display: block;
+        width: 65%;
+    }
+    #uranusSSS{
+        display: block;
+        width: 65%;
+    }
+    #neptuneSSS{
+        display: block;
+        width: 65%;
+    }
+    #plutoSSS{
+        display: block;
+        width: 65%;
+    }
+
+
+    .navRightPlanet {
+    float: right;
+    padding:0px;
+    margin-top: -120px;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0.3;
+    right: -80px;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s;
+    transform: scale(0.4);
+    }
+
+} /*end of iphone 4 landscape*/
+
+
+
+
+
+
+
+/*ipad portrait*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+footer {
+    margin-top: 53%;
+}
+
+
+#plutoSS {
+    position: absolute;
+    top: 10.1%;
+    left: 3.5%;
+    width: 1.5%;
+    height: auto;
+}
+
+#neptuneSS {
+    position: absolute;
+    top: 9%;
+    left: 15.8%;
+    width: 3.2%;
+    height: auto;
+    }
+
+#uranusSS {
+    position: absolute;
+    top: 8%;
+    left: 20.8%;
+    width: 3.7%;
+    height: auto;
+}
+
+#mercurySS {
+    position: absolute;
+    top: 61.5%;
+    left: 70%;
+    width: 1.9%;
+    height: auto;
+}
+
+#venusSS {
+    position: absolute;
+    top: 55.4%;
+    left: 76%;
+    width: 4%;
+    height: auto;
+}
+
+#earthSS {
+    position: absolute;
+    top: 49.5%;
+    left: 82%;
+    width: 4.1%;
+    height: auto;
+}
+
+#moonSS {
+    position: absolute;
+    top: 49.5%;
+    left: 86%;
+    width: 1.6%;
+    height: auto;
+}
+
+#marsSS {
+    position: absolute;
+    top: 41%;
+    left: 89.6%;
+    width: 3.5%;
+    height: auto;
+}
+
+.navRightPlanet {
+    float: right;
+    padding:0px;
+    margin-top: 110px;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0.3;
+    right: -80px;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s;
+}
+
+#clickMe{
+    position: absolute;
+    border:3px solid white;
+    /*margin-left: 143px;*/
+    margin-left: 37%;
+    margin-top: 10px;
+    overflow: hidden;
+    }
+
+    #clickMe:hover{
+    position: absolute;
+    border:3px solid red;
+    background-color: white;
+    margin-left: 37%;
+    margin-top: 10px;
+    overflow: hidden;
+    }
+
+
+
+} /*end of ipad portrait*/
+
+
+/*ipad landscape*/
+@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+
+footer {
+    margin-top: 7%;
+}
+
+
+#mercurySS {
+    position: absolute;
+    top: 61.4%;
+    left: 70.2%;
+    width: 1.9%;
+    height: auto;
+}
+
+#venusSS {
+    position: absolute;
+    top: 55.4%;
+    left: 76.3%;
+    width: 4%;
+    height: auto;
+}
+
+#earthSS {
+    position: absolute;
+    top: 49.5%;
+    left: 82.5%;
+    width: 4.1%;
+    height: auto;
+}
+
+#moonSS {
+    position: absolute;
+    top: 49.6%;
+    left: 86.7%;
+    width: 1.6%;
+    height: auto;
+}
+
+#marsSS {
+    position: absolute;
+    top: 40.9%;
+    left: 89.9%;
+    width: 3.5%;
+    height: auto;
+}
+
+#jupiterSS {
+    position: absolute;
+    top: 16.9%;
+    left: 33.5%;
+    width: 6.7%;
+    height: auto;
+}
+
+#saturnSS {
+    position: absolute;
+    top: 10.9%;
+    left: 23.8%;
+    width: 9.7%;
+    height: auto;
+}
+
+#uranusSS {
+    position: absolute;
+    top: 8%;
+    left: 19.8%;
+    width: 3.7%;
+    height: auto;
+}
+
+#neptuneSS {
+    position: absolute;
+    top: 9.2%;
+    left: 15%;
+    width: 3.2%;
+    height: auto;
+}
+
+#plutoSS {
+    position: absolute;
+    top: 10%;
+    left: 2.9%;
+    width: 1.5%;
+    height: auto;
+}  
+
+.navRightPlanet {
+    float: right;
+    padding:0px;
+    margin-top: 90px;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0.3;
+    right: -80px;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s;
+}
+
+#clickMe{
+    position: absolute;
+    border:3px solid white;
+    /*margin-left: 143px;*/
+    margin-left: 40%;
+    margin-top: 10px;
+    overflow: hidden;
+    }
+
+    #clickMe:hover{
+    position: absolute;
+    border:3px solid red;
+    background-color: white;
+    margin-left: 40%;
+    margin-top: 10px;
+    overflow: hidden;
+    }
+
+    footer {
+        margin-top: 20%;
+    }
+
+
+} /*end of ipad landscape*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*wide screen*/
+
 @media (min-width: 1441px) and (max-width: 1920px) {
 
+
+
 #planet-description {
-    margin-top: 300px;
+    margin-top: 35%;
 }
+
+.navRightPlanet {
+    float: right;
+    padding:0px;
+    margin-top: 200px;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0.3;
+    right: -80px;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s;
+}
+
+#planetHoverNameSun {
+    position: absolute;
+    top: 41%;
+    left: 58%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#sunSS:hover #planetHoverNameSun {
+    display: block;
+}
+
+
+#mercurySS {
+    position: absolute;
+    top: 61.5%;
+    left: 70.5%;
+    width: 1.9%;
+    height: auto;
+}
+
+#planetHoverNameMercury {
+    position: absolute;
+    top: 56.5%;
+    left: 69.3%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#mercurySS:hover #planetHoverNameMercury {
+    display: block;
+}
+
+#venusSS {
+    position: absolute;
+    top: 55.4%;
+    left: 76.7%;
+    width: 4%;
+    height: auto;
+}
+
+#planetHoverNameVenus {
+    position: absolute;
+    top: 49%;
+    left: 77%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#venusSS:hover #planetHoverNameVenus {
+    display: block;
+}
+
+#earthSS {
+    position: absolute;
+    top: 49.5%;
+    left: 83.0%;
+    width: 4.1%;
+    height: auto;
+}
+
+#planetHoverNameEarth {
+    position: absolute;
+    top: 43%;
+    left: 83.7%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#earthSS:hover #planetHoverNameEarth {
+    display: block;
+}
+
+#moonSS {
+    position: absolute;
+    top: 49.5%;
+    left: 87%;
+    width: 1.6%;
+    height: auto;
+}
+
+#planetHoverNameMoon {
+    position: absolute;
+    top: 44.5%;
+    left: 86.5%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#moonSS:hover #planetHoverNameMoon {
+    display: block;
+}
+
+#marsSS {
+    position: absolute;
+    top: 41%;
+    left: 90.6%;
+    width: 3.5%;
+    height: auto;
+}
+
+#planetHoverNameMars {
+    position: absolute;
+    top: 35.5%;
+    left: 91.2%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#marsSS:hover #planetHoverNameMars {
+    display: block;
+}
+
+#jupiterSS {
+    position: absolute;
+    top: 16.9%;
+    left: 33.3%;
+    width: 6.7%;
+    height: auto;
+}
+
+#planetHoverNameJupiter {
+    position: absolute;
+    top: 8.5%;
+    left: 35.2%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#jupiterSS:hover #planetHoverNameJupiter {
+    display: block;
+}
+
+#saturnSS {
+    position: absolute;
+    top: 10.9%;
+    left: 23.6%;
+    width: 9.7%;
+    height: auto;
+}
+
+#planetHoverNameSaturn {
+    position: absolute;
+    top: 7%;
+    left: 27.2%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#saturnSS:hover #planetHoverNameSaturn {
+    display: block;
+}
+
+#uranusSS {
+    position: absolute;
+    top: 8%;
+    left: 19.8%;
+    width: 3.7%;
+    height: auto;
+}
+
+#planetHoverNameUranus {
+    position: absolute;
+    top: 6%;
+    left: 20.2%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#uranusSS:hover #planetHoverNameUranus {
+    display: block;
+}
+
+
+#neptuneSS {
+    position: absolute;
+    top: 9%;
+    left: 14.8%;
+    width: 3.2%;
+    height: auto;
+}
+
+#planetHoverNameNeptune {
+    position: absolute;
+    top: 4.5%;
+    left: 14.5%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#neptuneSS:hover #planetHoverNameNeptune {
+    display: block;
+}
+
+#plutoSS {
+    position: absolute;
+    top: 10.1%;
+    left: 2.5%;
+    width: 1.5%;
+    height: auto;
+}
+
+#planetHoverNamePluto {
+    position: absolute;
+    top: 5%;
+    left: 2.3%;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#plutoSS:hover #planetHoverNamePluto {
+    display: block;
+}
+
+
+} /*end of wide screen*/
+
+
+
+@media (min-width: 1080px) and (max-width: 1200px) {
+
+#planet-description {
+    margin-top: 7%;
+}
+
+.navRightPlanet {
+    float: right;
+    padding:0px;
+    margin-top: 300px;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0.3;
+    right: -80px;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s;
+}
+
+footer {
+    /*position: relative;*/
+    margin-top: 38%;
+}
+
 
 
     }
